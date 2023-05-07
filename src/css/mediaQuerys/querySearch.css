@@ -1,0 +1,46 @@
+/* CSS styles for iPhone 12 Pro */
+
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .logo {
+    width: 25vw;
+    margin: 1vh auto 0 auto;
+    text-align: center;
+  }
+
+  .big-container .headline-searchbar {
+    font-size: 1.1rem;
+    width: 85vw;
+    margin: 3vh 0 0 0;
+  }
+
+  .search-container input {
+    font-size: 1rem;
+    width: 60vw;
+    height: 3vh;
+    margin: 0.8rem 0 1rem 0;
+  }
+
+  .search-container input::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .search-container input:focus {
+    font-size: 1rem;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 4vh;
+    left: 53vw;
+    cursor: pointer;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+  .result-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    text-decoration: none;
+  }
+}

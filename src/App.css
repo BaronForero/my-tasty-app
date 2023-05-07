@@ -1,38 +1,51 @@
+@font-face {
+  font-family: "Poppins-extraLight";
+  src: url("./components/fonts/Poppins/Poppins-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-light";
+  src: url("./components/fonts/Poppins/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("./components/fonts/Poppins/Poppins-Bold.ttf");
+}
+/* -------- Kathi ---------------*/
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./components/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-button";
+  src: url("./components/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='90' viewBox='0 0 100 100' style='fill:black;font-size:64px; transform:rotate(-25deg);'><text y='40%'>🍴</text></svg>"),
+    auto;
+}
+
+/* ======= GENERALS ======= */
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.productItems img {
+  width: 60px;
+}
+.productList {
+  display: grid;
+  grid-template: repeat(3, 1fr);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.strInstructions {
+  width: 75vw;
+  font-size: 6px;
+  margin: 0 auto;
+  text-align: center;
 }

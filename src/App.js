@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Random from "./components/Random";
+import CategoryList from "./pages/CategoryList";
+import ProductDetails from "./pages/ProductDetails";
+import ProductItems from "./pages/ProductItems";
+import ProductList from "./pages/ProductList";
+import CategoryResults from "./pages/CategoryResults";
+import CustomizedSwitches from "./components/MaterialUISwitch";
+import { useState } from "react";
 
 function App() {
+  const [light, setLight] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ backgroundColor: light ? "#fff" : "#000" }}>
+      <CustomizedSwitches light={light} setLight={setLight} />
+      <Routes>
+        <Route path="/" element={<CategoryList light={light} />} />
+        <Route path="/random" element={<Random />} />
+        <Route path="/productItems" element={<ProductItems />} />
+        <Route path="/productList" element={<ProductList />} />
+        <Route path="/categoryList/:idCategory" element={<CategoryResults />} />
+        <Route path="/categoryResults/:idMeal" element={<ProductDetails />} />
+      </Routes>
     </div>
   );
 }

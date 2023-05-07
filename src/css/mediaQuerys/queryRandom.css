@@ -1,0 +1,65 @@
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .container_random {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 1vh auto 3vh auto;
+    background: #96c0b7;
+    border-radius: 10px;
+    width: 80vw;
+  }
+  .container_box img {
+    width: 70vw;
+    height: 20vh;
+    margin-top: -10px;
+  }
+  .container_left {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    text-align: left;
+    margin: 0 2vh 2vh 0;
+  }
+  .container_left h2 {
+    font-family: "Poppins-Regular";
+    font-size: 1.4rem;
+    margin: 0 0 1vh 0;
+    text-align: left;
+    display: flex;
+  }
+  .all_texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    text-align: left;
+    padding: 0;
+    font-family: "Poppins-Regular";
+    font-weight: 400;
+    margin: 0 0 1.5rem 1.3rem;
+    font-size: 0.7rem;
+  }
+
+  .container_right {
+    width: 16rem;
+    text-align: left;
+    margin: 0 auto;
+  }
+  .container_right h3 {
+    font-size: 1rem;
+    margin: 0 0 2vh 0;
+  }
+  .button_video {
+    font-family: "Roboto-button";
+    font-size: 0.6rem;
+    background-color: white;
+    color: #96c0b7;
+    padding: 0.8rem 1.5rem;
+    margin: 3vh 0 0 2vw;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 900;
+    display: inline-flex;
+  }
+}

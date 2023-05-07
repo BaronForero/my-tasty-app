@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+/* ------- GENERALS --------- */
+
+/* -------- my Container Box ---------- */
+.product-details {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1vh auto 3vh auto;
+  background: #96c0b7;
+  border-radius: 10px;
+  min-height: 90vh; /* use min-height instead of height to allow the container to expand if necessary */
+  width: 70vw;
+  padding: 40px;
+}
+
+/*------------ IMAGE------------ */
+.product-detailsImg {
+  width: 65vw;
+  height: 70vh;
+  margin: 2vh 0 1vh 0;
+  /* clip: rect(10% 20% 10% 5%); */
+  object-fit: cover;
+  -webkit-box-shadow: -0.5px 0.8px 24px -2px #fafafa;
+  box-shadow: -1px 2px 24px -3px #fafafa;
+}
+
+/* --------- mein all Texts / both container --------- */
+.details-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vh auto;
+  width: 65vw;
+}
+
+/* --------- Container left: description ----------- */
+.product-details-headline {
+  font-family: "Poppins-Regular";
+  font-size: 1.8rem;
+  margin: 0 0 2vh 0;
+  text-align: left;
+  display: flex;
+}
+
+.instruction-block {
+  display: flex;
+  flex-direction: column;
+  width: 48vw;
+  text-align: left;
+}
+
+.instructions ul {
+  padding: 0;
+}
+
+.instructions li {
+  font-family: "Poppins-Regular";
+  font-weight: 400;
+  margin: 0 0 1.5rem 1.3rem;
+}
+
+/* --------- Container right: Measure & Ingredients ----------- */
+.productDetails-ingredient-block {
+  width: 12rem;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.product-details-h3 {
+  font-size: 1.5rem;
+  margin: 0 0 2vh 0;
+}
+
+.ingredient-points {
+  text-decoration: none;
+  margin-bottom: 2vh;
+  font-weight: 500;
+}
+
+/* --------------- button -------------------  */
+.productDetails-link {
+  font-family: "Roboto-button";
+  font-size: 1.1rem;
+  background-color: white;
+  color: #96c0b7;
+  padding: 0.8rem 1.5rem;
+  margin: 3vh 0 0 2vw;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 900;
+  display: inline-flex;
+}
+
+/* Sweep To Right */
+.productDetails-link {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border-radius: 10px;
+}
+.productDetails-link:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098d1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  border-radius: 10px;
+}
+.productDetails-link:hover,
+.productDetails-link:focus,
+.productDetails-link:active {
+  color: white;
+  border-radius: 10px;
+}
+.productDetails-link:hover:before,
+.productDetails-link:focus:before,
+.productDetails-link:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  border-radius: 10px;
+}

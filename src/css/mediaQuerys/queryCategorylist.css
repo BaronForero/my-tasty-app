@@ -1,0 +1,43 @@
+/* ------------------ MEDIA QUERYS ---------------------- */
+
+@media only screen and (device-width: 390px) and (device-height: 844px) {
+  .head-presentation {
+    text-align: center;
+    width: 80vw;
+    font-size: 1rem;
+  }
+
+  .categoryListContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 20px;
+    width: 85vw;
+  }
+
+  .categoryList {
+    width: 40vw;
+    height: 20vh;
+  }
+
+  .categoryList h2 {
+    font-size: 1.3rem;
+  }
+  .categoryList img {
+    width: 35vw;
+    margin-top: 5px;
+    align-items: center;
+  }
+  .categoryList a {
+    font-size: 1.3rem;
+  }
+  .cagetoryList-random {
+    width: 40vw;
+    height: 20vh;
+    background-color: #d6dfc9;
+  }
+
+  .random_headline {
+    font-size: 2rem;
+  }
+}

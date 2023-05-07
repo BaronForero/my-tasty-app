@@ -1,0 +1,101 @@
+.head-presentation {
+  width: 95vw;
+  margin: 10px 50px;
+  text-align: left;
+  color: #96c0b7;
+  font-size: 25px;
+  font-weight: 500;
+  text-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.categoryListContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 93vw;
+  margin: 10px auto 30px auto;
+  gap: 2.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.categoryList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 55vh;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 20px 10px;
+  -webkit-transform: perspective(2px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  color: #fff;
+  cursor: pointer;
+}
+.categoryList:hover,
+.categoryList:focus,
+a .categoryList:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.categoryList:focus {
+  animation: fadeOutLeft;
+  animation-duration: 1s;
+}
+.categoryList h2 {
+  cursor: pointer;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 3rem;
+}
+.categoryList img {
+  width: 27vw;
+  margin-top: 30px;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.categoryList a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+.cagetoryList-random {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 55vh;
+  border: 1px solid #e3e3e3;
+  background-color: #d6dfc9;
+  border-radius: 8px;
+  padding: 20px 10px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  -webkit-transform: perspective(2px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.cagetoryList-random:hover,
+.cagetoryList-random:focus,
+.cagetoryList-random:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.random_headline {
+  font-size: 3rem;
+}

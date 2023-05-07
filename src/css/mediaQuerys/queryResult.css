@@ -1,0 +1,27 @@
+@media only screen and (min-device-width: 375px) and (max-device-width: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .container_result {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  .container_item {
+    width: 45vw;
+    height: 30vh;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+
+  .container_item p {
+    margin-bottom: 3.5rem;
+    font-size: 0.9rem;
+    width: 80%;
+    height: 10px;
+  }
+
+  .container_item .container_img {
+    width: 35vw;
+    height: 16vh;
+  }
+}
